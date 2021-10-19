@@ -33,4 +33,16 @@ $(() => {
     $("#body").removeClass("darkMode");
     localStorage.setItem("mode", "light");
   });
+
+$("#tituloCinema").mouseenter(function (){
+  this.animate(
+    {
+      height: "3px",
+      color: "white"
+    }
+  )
 });
+
+});
+
+
