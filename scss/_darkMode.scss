@@ -1,0 +1,65 @@
+.darkMode {
+  background-color: black;
+  color: white;
+
+  #bDark,
+  #bLight,
+  #bCarrito {
+    color: white;
+  }
+
+  #divPeliculas {
+    background-color: rgba(22, 30, 93, 0.9);
+    color: rgb(235, 223, 223);
+    .articuloPeliculaZoom {
+      background-color: rgba(38, 49, 136, 0.8);
+      box-shadow: 0px 0px 7px 1px black;
+
+      .botonCerrar {
+        color: white;
+        background-color: rgba(25, 34, 105, 0.931);
+        border: rgb(235, 223, 223) solid 1px;
+      }
+      .divTextoImagen {
+        img {
+          box-shadow: 0px 0px 4px 1px black;
+        }
+        .divTexto h5 {
+          text-shadow: 0px 3px 4px black;
+        }
+        .divTexto .pTrama {
+          background-color: rgba(142, 144, 160, 0.7);
+        }
+        .divEntradaHorario form {
+          button {
+            background-color: rgba(17, 23, 71, 0.801);
+            box-shadow: 0px 0px 3px 1px black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  #divPeliculasPadre {
+    #divCarrito{
+      background-color: rgba(190, 92, 177, 0.85);
+      article{
+        background-color: rgba(46, 19, 146, 0.85); 
+      }
+      #botonCerrarCarrito{
+        background-color:rgba(86, 74, 129, 0.85);
+        border:solid 5px rgb(46, 19, 146);
+      }
+      #divCarritoPrecio{
+        background-color: rgba(46, 19, 146, 0.85);
+        #validarDescuento{
+          background-color: rgba(190, 92, 177, 0.55);
+        border:solid 5px rgb(11, 26, 107);
+        }
+      }
+      #botonComprar, .botonVaciarCarrito{
+        border:solid 5px rgb(46, 19, 146);
+      }
+    }
+  }
+}

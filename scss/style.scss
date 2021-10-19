@@ -1,0 +1,178 @@
+@import "darkMode";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+}
+h1{
+  font-size: 44px;
+padding: 10px;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+#sectionPeliculas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 30vh;
+  article {
+    margin: 10px 3px;
+    text-align: center;
+  }
+}
+
+#divPeliculas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(216, 230, 154, 0.9);
+  color: rgb(23, 23, 23);
+  .articuloPeliculaZoom {
+    background-color: rgba(161, 150, 132, 0.7);
+    box-shadow: 0px 0px 7px 1px black;
+    padding: 15px;
+    .botonCerrar {
+     float: right;
+      color: black;
+      background-color: rgba(161, 150, 132, 0.8);
+      padding: 3px;
+      font-size: 30px;
+      border: rgb(221, 212, 212) solid 1px;
+    }
+    .divTextoImagen {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      justify-content: space-evenly;
+      align-items: center;
+      img {
+        margin: 10px;
+        box-shadow: 0px 0px 4px 2px rgb(221, 212, 212);
+      }
+      .divTexto {
+        margin: 10px;
+        h5 {
+          font-size: 34px;
+          margin-bottom: 4px;
+          text-align: center;
+          text-shadow: 1px 1px 1px rgb(221, 212, 212);
+        }
+        .pTrama{
+          padding:6px; 
+          background-color:rgba(216, 230, 154, 0.9) ;
+        }
+        p {
+          margin-bottom: 2px;
+        }
+      }
+      .divEntradaHorario form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        select {
+          margin: 7px 0px;
+        }
+        button {
+          background-color: rgba(216, 230, 154, 0.9);
+          box-shadow: 0px 0px 0px 2px rgb(221, 212, 212);
+          color: black;
+          padding: 7px;
+          width: max-content;
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background-color: rgba(235, 57, 57, 0.74);
+}
+
+#divPeliculasPadre {
+  #divCarrito{
+    position: fixed;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(216, 230, 154, 0.9);
+   
+    
+    article{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(173, 127, 25, 0.85);
+      width: max-content;
+      padding: 15px 2rem; 
+    }
+    #botonCerrarCarrito{
+      background-color:rgba(175, 145, 79, 0.85);
+      padding: 6px;
+      font-size: 20px;
+      border:solid 5px rgb(173, 127, 25);
+    }
+    #divCarritoPrecio{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 46px;
+      font-size: 20px;
+      background-color: rgba(173, 127, 25, 0.85);
+      width: 153.5px;
+      input{
+        margin-bottom: 7px;
+      }
+      #validarDescuento{
+        background-color: rgba(133, 179, 131, 0.55);
+      border:solid 5px rgb(149, 108, 19);
+      padding: 8px;
+      }
+      span{
+        margin: 15px;
+      }
+    }
+    #botonComprar, .botonVaciarCarrito{
+      padding: 10px 46px;
+      font-size: 20px;
+      border:solid 5px rgb(173, 127, 25);
+      background-color: rgba(82, 175, 79, 0.85);
+      width: 247px;
+    }
+    .botonVaciarCarrito{
+      position: absolute;
+      display: block;
+      background-color: rgba(175, 79, 92, 0.85);
+    }
+  }
+}
+#botonAceptar{
+  margin-top: 15px;
+  padding: 4px;
+  font-size: 15px;
+}

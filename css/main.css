@@ -1,0 +1,189 @@
+.darkMode {
+  background-color: black;
+  color: white; }
+  .darkMode #bDark,
+  .darkMode #bLight,
+  .darkMode #bCarrito {
+    color: white; }
+  .darkMode #divPeliculas {
+    background-color: rgba(22, 30, 93, 0.9);
+    color: #ebdfdf; }
+    .darkMode #divPeliculas .articuloPeliculaZoom {
+      background-color: rgba(38, 49, 136, 0.8);
+      box-shadow: 0px 0px 7px 1px black; }
+      .darkMode #divPeliculas .articuloPeliculaZoom .botonCerrar {
+        color: white;
+        background-color: rgba(25, 34, 105, 0.931);
+        border: #ebdfdf solid 1px; }
+      .darkMode #divPeliculas .articuloPeliculaZoom .divTextoImagen img {
+        box-shadow: 0px 0px 4px 1px black; }
+      .darkMode #divPeliculas .articuloPeliculaZoom .divTextoImagen .divTexto h5 {
+        text-shadow: 0px 3px 4px black; }
+      .darkMode #divPeliculas .articuloPeliculaZoom .divTextoImagen .divTexto .pTrama {
+        background-color: rgba(142, 144, 160, 0.7); }
+      .darkMode #divPeliculas .articuloPeliculaZoom .divTextoImagen .divEntradaHorario form button {
+        background-color: rgba(17, 23, 71, 0.801);
+        box-shadow: 0px 0px 3px 1px black;
+        color: white; }
+  .darkMode #divPeliculasPadre #divCarrito {
+    background-color: rgba(190, 92, 177, 0.85); }
+    .darkMode #divPeliculasPadre #divCarrito article {
+      background-color: rgba(46, 19, 146, 0.85); }
+    .darkMode #divPeliculasPadre #divCarrito #botonCerrarCarrito {
+      background-color: rgba(86, 74, 129, 0.85);
+      border: solid 5px #2e1392; }
+    .darkMode #divPeliculasPadre #divCarrito #divCarritoPrecio {
+      background-color: rgba(46, 19, 146, 0.85); }
+      .darkMode #divPeliculasPadre #divCarrito #divCarritoPrecio #validarDescuento {
+        background-color: rgba(190, 92, 177, 0.55);
+        border: solid 5px #0b1a6b; }
+    .darkMode #divPeliculasPadre #divCarrito #botonComprar, .darkMode #divPeliculasPadre #divCarrito .botonVaciarCarrito {
+      border: solid 5px #2e1392; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px; }
+
+h1 {
+  font-size: 44px;
+  padding: 10px; }
+
+li {
+  list-style: none; }
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none; }
+
+#sectionPeliculas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 30vh; }
+  #sectionPeliculas article {
+    margin: 10px 3px;
+    text-align: center; }
+
+#divPeliculas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(216, 230, 154, 0.9);
+  color: #171717; }
+  #divPeliculas .articuloPeliculaZoom {
+    background-color: rgba(161, 150, 132, 0.7);
+    box-shadow: 0px 0px 7px 1px black;
+    padding: 15px; }
+    #divPeliculas .articuloPeliculaZoom .botonCerrar {
+      float: right;
+      color: black;
+      background-color: rgba(161, 150, 132, 0.8);
+      padding: 3px;
+      font-size: 30px;
+      border: #ddd4d4 solid 1px; }
+    #divPeliculas .articuloPeliculaZoom .divTextoImagen {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      justify-content: space-evenly;
+      align-items: center; }
+      #divPeliculas .articuloPeliculaZoom .divTextoImagen img {
+        margin: 10px;
+        box-shadow: 0px 0px 4px 2px #ddd4d4; }
+      #divPeliculas .articuloPeliculaZoom .divTextoImagen .divTexto {
+        margin: 10px; }
+        #divPeliculas .articuloPeliculaZoom .divTextoImagen .divTexto h5 {
+          font-size: 34px;
+          margin-bottom: 4px;
+          text-align: center;
+          text-shadow: 1px 1px 1px #ddd4d4; }
+        #divPeliculas .articuloPeliculaZoom .divTextoImagen .divTexto .pTrama {
+          padding: 6px;
+          background-color: rgba(216, 230, 154, 0.9); }
+        #divPeliculas .articuloPeliculaZoom .divTextoImagen .divTexto p {
+          margin-bottom: 2px; }
+      #divPeliculas .articuloPeliculaZoom .divTextoImagen .divEntradaHorario form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #divPeliculas .articuloPeliculaZoom .divTextoImagen .divEntradaHorario form select {
+          margin: 7px 0px; }
+        #divPeliculas .articuloPeliculaZoom .divTextoImagen .divEntradaHorario form button {
+          background-color: rgba(216, 230, 154, 0.9);
+          box-shadow: 0px 0px 0px 2px #ddd4d4;
+          color: black;
+          padding: 7px;
+          width: max-content; }
+
+.menu {
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background-color: rgba(235, 57, 57, 0.74); }
+
+#divPeliculasPadre #divCarrito {
+  position: fixed;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(216, 230, 154, 0.9); }
+  #divPeliculasPadre #divCarrito article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(173, 127, 25, 0.85);
+    width: max-content;
+    padding: 15px 2rem; }
+  #divPeliculasPadre #divCarrito #botonCerrarCarrito {
+    background-color: rgba(175, 145, 79, 0.85);
+    padding: 6px;
+    font-size: 20px;
+    border: solid 5px #ad7f19; }
+  #divPeliculasPadre #divCarrito #divCarritoPrecio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 46px;
+    font-size: 20px;
+    background-color: rgba(173, 127, 25, 0.85);
+    width: 153.5px; }
+    #divPeliculasPadre #divCarrito #divCarritoPrecio input {
+      margin-bottom: 7px; }
+    #divPeliculasPadre #divCarrito #divCarritoPrecio #validarDescuento {
+      background-color: rgba(133, 179, 131, 0.55);
+      border: solid 5px #956c13;
+      padding: 8px; }
+    #divPeliculasPadre #divCarrito #divCarritoPrecio span {
+      margin: 15px; }
+  #divPeliculasPadre #divCarrito #botonComprar, #divPeliculasPadre #divCarrito .botonVaciarCarrito {
+    padding: 10px 46px;
+    font-size: 20px;
+    border: solid 5px #ad7f19;
+    background-color: rgba(82, 175, 79, 0.85);
+    width: 247px; }
+  #divPeliculasPadre #divCarrito .botonVaciarCarrito {
+    position: absolute;
+    display: block;
+    background-color: rgba(175, 79, 92, 0.85); }
+
+#botonAceptar {
+  margin-top: 15px;
+  padding: 4px;
+  font-size: 15px; }

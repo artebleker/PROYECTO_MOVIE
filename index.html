@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/8dfefe488a.js"
+      crossorigin="anonymous"
+    ></script>
+<!-- Api del día y horario -->
+    <script src="//widget.time.is/es.js"></script>
+    <script>
+      time_is_widget.init({
+        Buenos_Aires_z105: {
+          template: "TIME<br>DATE",
+          date_format: "daynum/monthnum/year",
+        },
+      });
+    </script>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body id="body">
+    <header>
+      <menu class="menu">
+        <ul>
+          <li>
+            <button id="bDark"><i class="far fa-moon"></i></button>
+          </li>
+          <li>
+            <button id="bLight"><i class="far fa-sun"></i></button>
+          </li>
+          <li>
+            <button id="bCarrito" style="margin-top: 15px; "><i class="fa fa-shopping-cart"></i></button>
+          </li>
+        </ul>
+        <h1>Cinema Script</h1>
+     
+        <ul>
+          <li>
+            <a
+              href="https://time.is/Buenos_Aires"
+              id="time_is_link"
+              rel="nofollow"
+              style="font-size: 12px"
+            ></a>
+          </li>
+          <li><span id="Buenos_Aires_z105" style="font-size: 12px"></span></li>
+        </ul>
+      </menu>
+    </header>
+    <div id="divPeliculasPadre">
+      <div id="divPeliculas" style="display: none"></div>
+    </div>
+    <section id="sectionPeliculas"></section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="mainDark.js"></script>
+    <script defer src="funciones.js"></script>
+    <script defer src="main.js"></script>
+    
+  </body>
+</html>
