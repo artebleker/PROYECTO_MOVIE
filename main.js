@@ -1,4 +1,4 @@
-// Comprar entradas de cine
+// Comprar entradas de cine, branch Julian
 
 // JS principal: construccion del sitio
 
